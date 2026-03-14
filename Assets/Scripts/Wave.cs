@@ -43,7 +43,7 @@ public class Wave : MonoBehaviour
         AS.PlayOneShot(m_Tracks[CurrentWave]);
         //Show Current Wave Stats
         MenuManager.Instance.HUD.DiplayWave(CurrentWave);
-        m_Scale = Random.Range(m_ScaleMin, m_ScaleMin);
+        m_Scale = Random.Range(m_ScaleMin, m_ScaleMax);
         MenuManager.Instance.HUD.DiplayStatus("Enemy Scale : " + m_Scale);
         Player.GetComponent<Player>().ScaleHP(BasePlayerHP[CurrentWave - 1]);
         Spawner1.GetComponent<EnemySpawner>().ScaleEnemy(m_Scale, BaseHit[CurrentWave - 1], BaseSpeed[CurrentWave - 1], BaseHealth[CurrentWave - 1], IntervalScaleMin[CurrentWave - 1], IntervalScaleMax[CurrentWave - 1]);

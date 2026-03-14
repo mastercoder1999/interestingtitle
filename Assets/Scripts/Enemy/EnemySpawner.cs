@@ -20,34 +20,40 @@ public class EnemySpawner : MonoBehaviour
     private float m_Interval;
     private float m_LastSpawn;
 
+    private void Start()
+    {
+        m_LastSpawn = Time.time;
+        m_Interval = Random.Range(IntervalMin, IntervalMax);
+    }
+
     private void Update()
     {
-        m_Interval = Random.Range(IntervalMin, IntervalMax);
         if (Time.time - m_LastSpawn >= m_Interval)
         {
             m_LastSpawn = Time.time;
+            m_Interval = Random.Range(IntervalMin, IntervalMax);
 
-            // Spawn
             Vector3 t_SpawnPos = Grid.GridToWorld(Grid.WorldToGrid(transform.position));
-
             GameObject t_NewEnemy = Instantiate(Prefab_Enemy, t_SpawnPos, Quaternion.identity);
 
-            t_NewEnemy.GetComponent<Enemy>().Player = Player;
-            t_NewEnemy.GetComponent<Enemy>().Pathfinder = Pathfinder;
-            t_NewEnemy.GetComponent<Enemy>().Grid = Grid;
-            t_NewEnemy.GetComponent<Enemy>().Objective = Objectives[Random.Range(0, Objectives.Length)];
-            t_NewEnemy.GetComponent<Enemy>().Hit = EnemyHit;
-            t_NewEnemy.GetComponent<Enemy>().Speed = EnemySpeed;
-            t_NewEnemy.GetComponent<Enemy>().Health = EnemyHeath;
+            Enemy enemy = t_NewEnemy.GetComponent<Enemy>();
+            enemy.Player = Player;
+            enemy.Pathfinder = Pathfinder;
+            enemy.Grid = Grid;
+            enemy.Objective = Objectives[Random.Range(0, Objectives.Length)];
+            enemy.Hit = EnemyHit;
+            enemy.Speed = EnemySpeed;
+            enemy.Health = EnemyHeath;
         }
-        
     }
+
     public void ScaleEnemy(float Scale, float ScaleHit, float ScaleSpeed, float ScaleHealth, float ScaleIntervalMin, float ScaleIntervalMax)
     {
         EnemyHit = ScaleHit * Scale;
         EnemySpeed = ScaleSpeed * Scale;
         EnemyHeath = ScaleHealth * Scale;
         IntervalMin = ScaleIntervalMin;
-        IntervalMax = ScaleIntervalMax += 1f;
+        IntervalMax = ScaleIntervalMax;
+        m_Interval = Random.Range(IntervalMin, IntervalMax);
     }
 }

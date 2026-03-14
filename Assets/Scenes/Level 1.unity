@@ -1976,7 +1976,7 @@ MonoBehaviour:
   - 4
   - 3
   m_ScaleMin: 1
-  m_ScaleMax: 1.5
+  m_ScaleMax: 1.2
   Spawner1: {fileID: 1362579926}
   Spawner2: {fileID: 948797236}
   Player: {fileID: 840525377}
