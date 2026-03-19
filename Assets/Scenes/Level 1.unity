@@ -1975,8 +1975,8 @@ MonoBehaviour:
   - 5
   - 4
   - 3
-  m_ScaleMin: 1
-  m_ScaleMax: 1.2
+  m_ScaleMin: 0.5
+  m_ScaleMax: 1
   Spawner1: {fileID: 1362579926}
   Spawner2: {fileID: 948797236}
   Player: {fileID: 840525377}
@@ -6898,6 +6898,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 457556922}
     m_Modifications:
+    - target: {fileID: 1026905273225762842, guid: f637380d355eceb4e8277fecab063de8, type: 3}
+      propertyPath: Damage
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1230892629096015787, guid: f637380d355eceb4e8277fecab063de8, type: 3}
       propertyPath: m_LocalScale.x
       value: 6.25
@@ -7711,6 +7715,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 457556922}
     m_Modifications:
+    - target: {fileID: 2292935188861896092, guid: 9edd164360b11c745be661a033db0e49, type: 3}
+      propertyPath: Damage
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2292935188861896092, guid: 9edd164360b11c745be661a033db0e49, type: 3}
+      propertyPath: Cooldown
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2971830641403578708, guid: 9edd164360b11c745be661a033db0e49, type: 3}
       propertyPath: m_Name
       value: TurretT1SNIPER
@@ -9343,6 +9355,10 @@ PrefabInstance:
       propertyPath: IntervalMin
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 6367545672522872573, guid: 6605018806264264a8e16340a1e80dcb, type: 3}
+      propertyPath: Prefab_SpecialEnemy
+      value: 
+      objectReference: {fileID: 3585306514795129914, guid: 2a3e14576003ab749b4a2777b4f72829, type: 3}
     - target: {fileID: 6367545672522872573, guid: 6605018806264264a8e16340a1e80dcb, type: 3}
       propertyPath: Objectives.Array.data[0]
       value: 
@@ -11698,6 +11714,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretT1SOLDIER
       objectReference: {fileID: 0}
+    - target: {fileID: 8045827123799071932, guid: 12c90b4a9e4c3934a9d59272f923f87a, type: 3}
+      propertyPath: Damage
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13227,6 +13247,10 @@ PrefabInstance:
       propertyPath: IntervalMin
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5388456315086346857, guid: 9b86edfae77b235459212b17e02a39f6, type: 3}
+      propertyPath: Prefab_SpecialEnemy
+      value: 
+      objectReference: {fileID: 3585306514795129914, guid: 2a3e14576003ab749b4a2777b4f72829, type: 3}
     - target: {fileID: 5388456315086346857, guid: 9b86edfae77b235459212b17e02a39f6, type: 3}
       propertyPath: Objectives.Array.data[0]
       value: 

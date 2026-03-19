@@ -614,6 +614,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2765837934188710585, guid: a4540b2aa2bca6f4084a90af35167161, type: 3}
+      propertyPath: Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125888179368477038, guid: a4540b2aa2bca6f4084a90af35167161, type: 3}
+      propertyPath: Damage
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4160,8 +4168,8 @@ MonoBehaviour:
   - 5
   - 4
   - 3
-  m_ScaleMin: 3
-  m_ScaleMax: 3.5
+  m_ScaleMin: 1.5
+  m_ScaleMax: 2
   Spawner1: {fileID: 788395623}
   Spawner2: {fileID: 703530027}
   Player: {fileID: 955613210}
@@ -7114,6 +7122,10 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6367545672522872573, guid: 6605018806264264a8e16340a1e80dcb, type: 3}
+      propertyPath: Prefab_SpecialEnemy
+      value: 
+      objectReference: {fileID: 3585306514795129914, guid: 2a3e14576003ab749b4a2777b4f72829, type: 3}
+    - target: {fileID: 6367545672522872573, guid: 6605018806264264a8e16340a1e80dcb, type: 3}
       propertyPath: Objectives.Array.data[0]
       value: 
       objectReference: {fileID: 434884224}
@@ -7844,6 +7856,10 @@ PrefabInstance:
       propertyPath: IntervalMin
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5388456315086346857, guid: 9b86edfae77b235459212b17e02a39f6, type: 3}
+      propertyPath: Prefab_SpecialEnemy
+      value: 
+      objectReference: {fileID: 3585306514795129914, guid: 2a3e14576003ab749b4a2777b4f72829, type: 3}
     - target: {fileID: 5388456315086346857, guid: 9b86edfae77b235459212b17e02a39f6, type: 3}
       propertyPath: Objectives.Array.data[0]
       value: 
@@ -8763,7 +8779,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -16, y: -9.000061}
+  m_AnchoredPosition: {x: -16, y: -9.000076}
   m_SizeDelta: {x: -600, y: -450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &895330211
@@ -12882,6 +12898,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 995026092}
     m_Modifications:
+    - target: {fileID: 1375306032519008413, guid: ee4089c84d4bf2442bf7038d84c72656, type: 3}
+      propertyPath: Damage
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375306032519008413, guid: ee4089c84d4bf2442bf7038d84c72656, type: 3}
+      propertyPath: Cooldown
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1530347108329747397, guid: ee4089c84d4bf2442bf7038d84c72656, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.5
@@ -19849,6 +19873,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 995026092}
     m_Modifications:
+    - target: {fileID: 2379841861162070617, guid: 8d4b994c61fb7334f9da2121e01bcafe, type: 3}
+      propertyPath: Damage
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379841861162070617, guid: 8d4b994c61fb7334f9da2121e01bcafe, type: 3}
+      propertyPath: Cooldown
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8263904893532168730, guid: 8d4b994c61fb7334f9da2121e01bcafe, type: 3}
       propertyPath: m_Name
       value: TurretT2SNIPER

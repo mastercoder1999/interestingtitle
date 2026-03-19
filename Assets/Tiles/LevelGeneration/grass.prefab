@@ -114,5 +114,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Item_Prefab: {fileID: 2954075773657166150, guid: 3a780dbab67da1d4ebaab22d52dcad07, type: 3}
-  DelayMin: 7
-  DelayMax: 20
+  DelayMin: 10
+  DelayMax: 80

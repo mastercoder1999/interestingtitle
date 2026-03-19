@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1503,6 +1502,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretT1SOLDIER
       objectReference: {fileID: 0}
+    - target: {fileID: 8045827123799071932, guid: 12c90b4a9e4c3934a9d59272f923f87a, type: 3}
+      propertyPath: Damage
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1825,6 +1828,10 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5388456315086346857, guid: 9b86edfae77b235459212b17e02a39f6, type: 3}
+      propertyPath: Prefab_SpecialEnemy
+      value: 
+      objectReference: {fileID: 3585306514795129914, guid: 2a3e14576003ab749b4a2777b4f72829, type: 3}
+    - target: {fileID: 5388456315086346857, guid: 9b86edfae77b235459212b17e02a39f6, type: 3}
       propertyPath: Objectives.Array.data[0]
       value: 
       objectReference: {fileID: 33772053}
@@ -1935,6 +1942,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1853840042}
     m_Modifications:
+    - target: {fileID: 2379841861162070617, guid: 8d4b994c61fb7334f9da2121e01bcafe, type: 3}
+      propertyPath: Damage
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8263904893532168730, guid: 8d4b994c61fb7334f9da2121e01bcafe, type: 3}
       propertyPath: m_Name
       value: TurretT2SNIPER
@@ -4244,6 +4255,10 @@ PrefabInstance:
       propertyPath: IntervalMin
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 6367545672522872573, guid: 6605018806264264a8e16340a1e80dcb, type: 3}
+      propertyPath: Prefab_SpecialEnemy
+      value: 
+      objectReference: {fileID: 3585306514795129914, guid: 2a3e14576003ab749b4a2777b4f72829, type: 3}
     - target: {fileID: 6367545672522872573, guid: 6605018806264264a8e16340a1e80dcb, type: 3}
       propertyPath: Objectives.Array.data[0]
       value: 
@@ -9317,12 +9332,12 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
   m_TaaSettings:
-    quality: 3
-    frameInfluence: 0.1
-    jitterScale: 1
-    mipBias: 0
-    varianceClampScale: 0.9
-    contrastAdaptiveSharpening: 0
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!81 &878992823
 AudioListener:
   m_ObjectHideFlags: 0
@@ -17632,6 +17647,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1853840042}
     m_Modifications:
+    - target: {fileID: 1026905273225762842, guid: f637380d355eceb4e8277fecab063de8, type: 3}
+      propertyPath: Damage
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1230892629096015787, guid: f637380d355eceb4e8277fecab063de8, type: 3}
       propertyPath: m_LocalScale.x
       value: 6.25
@@ -20227,8 +20246,8 @@ MonoBehaviour:
   - 5
   - 4
   - 3
-  m_ScaleMin: 2
-  m_ScaleMax: 2.5
+  m_ScaleMin: 1
+  m_ScaleMax: 1.5
   Spawner1: {fileID: 181983536}
   Spawner2: {fileID: 351135374}
   Player: {fileID: 978400051}

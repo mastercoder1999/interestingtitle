@@ -849,8 +849,8 @@ MonoBehaviour:
   - 5
   - 4
   - 3
-  m_ScaleMin: 4
-  m_ScaleMax: 4.5
+  m_ScaleMin: 2
+  m_ScaleMax: 2.5
   Spawner1: {fileID: 1221568950}
   Spawner2: {fileID: 291635058}
   Player: {fileID: 1603497025}
@@ -3693,12 +3693,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prefab_Enemy: {fileID: 3585306514795129914, guid: 24785ed5141142b43b8d849a922182cb, type: 3}
+  Prefab_SpecialEnemy: {fileID: 3585306514795129914, guid: 2a3e14576003ab749b4a2777b4f72829, type: 3}
   Player: {fileID: 1603497025}
   Pathfinder: {fileID: 1599211307}
   Grid: {fileID: 1599211306}
   Objectives:
   - {fileID: 1563163377}
   - {fileID: 465776420}
+  EnemyHit: 1
+  EnemySpeed: 5
+  EnemyHeath: 2
+  IntervalMin: 2
+  IntervalMax: 3
+  specialEnemyChance: 0.1
+  specialHitMultiplier: 1.25
+  specialSpeedMultiplier: 1.1
+  specialHealthMultiplier: 1.25
 --- !u!1 &303938625
 GameObject:
   m_ObjectHideFlags: 0
@@ -6402,6 +6412,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4296115780562662391, guid: 6c17bf1cb3d35d7478b243bafd810684, type: 3}
+      propertyPath: Damage
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4296115780562662391, guid: 6c17bf1cb3d35d7478b243bafd810684, type: 3}
+      propertyPath: Cooldown
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6521620739609048034, guid: 6c17bf1cb3d35d7478b243bafd810684, type: 3}
       propertyPath: m_Name
       value: TurretT3SOLDIER
@@ -7789,6 +7807,10 @@ PrefabInstance:
     - target: {fileID: 686283730962370239, guid: a4540b2aa2bca6f4084a90af35167161, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125888179368477038, guid: a4540b2aa2bca6f4084a90af35167161, type: 3}
+      propertyPath: Damage
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13538,6 +13560,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6992003396751881721, guid: c8a25b80e3d52f24a96fc495867aaa00, type: 3}
+      propertyPath: Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6992003396751881721, guid: c8a25b80e3d52f24a96fc495867aaa00, type: 3}
+      propertyPath: Cooldown
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15282,12 +15312,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prefab_Enemy: {fileID: 3585306514795129914, guid: 24785ed5141142b43b8d849a922182cb, type: 3}
+  Prefab_SpecialEnemy: {fileID: 3585306514795129914, guid: 2a3e14576003ab749b4a2777b4f72829, type: 3}
   Player: {fileID: 1603497025}
   Pathfinder: {fileID: 1599211307}
   Grid: {fileID: 1599211306}
   Objectives:
   - {fileID: 1563163377}
   - {fileID: 465776420}
+  EnemyHit: 1
+  EnemySpeed: 5
+  EnemyHeath: 2
+  IntervalMin: 2
+  IntervalMax: 3
+  specialEnemyChance: 0.1
+  specialHitMultiplier: 1.25
+  specialSpeedMultiplier: 1.1
+  specialHealthMultiplier: 1.25
 --- !u!1 &1228191561
 GameObject:
   m_ObjectHideFlags: 0
